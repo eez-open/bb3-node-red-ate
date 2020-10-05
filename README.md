@@ -1,7 +1,2 @@
-bb3-node-red-ate
-================
-
-### About
-
-This is your project's README.md file. It helps users understand what your
-project does, how to use it and anything else they may need to know.
+Node-RED flow to automate the testing of DCP405 modules. Requires [node-red-contrib-bb3](https://flows.nodered.org/node/@eez-open/node-red-contrib-bb3).
+Video available at: https://youtu.be/jMYAA-e9vyc
