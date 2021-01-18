@@ -16661,7 +16661,7 @@
         "connection": "e701286.3ff23d8",
         "connectionName": "",
         "connectionNameType": "str",
-        "command": "SENSE:FUNC VOLT, (@304); :SENSE:VOLT:RANG 3, (@304); :SENSE:VOLT:NPLC 2, (@304)",
+        "command": "SENSE:FUNC VOLT, (@304); :SENSE:VOLT:RANG 2, (@304); :SENSE:VOLT:NPLC 2, (@304)",
         "commandType": "str",
         "x": 440,
         "y": 1360,
@@ -18043,16 +18043,6 @@
                 "d8643588.e43f38"
             ]
         ]
-    },
-    {
-        "id": "bb4ad1c1.914f5",
-        "type": "comment",
-        "z": "7358c4b5.193a1c",
-        "name": "<--- TODO range is temporary 3, switch to 2 later",
-        "info": "",
-        "x": 1020,
-        "y": 1360,
-        "wires": []
     },
     {
         "id": "d3b34afc.cb9728",
