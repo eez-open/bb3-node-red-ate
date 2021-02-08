@@ -1119,7 +1119,7 @@
             },
             {
                 "x": 400,
-                "y": 3080,
+                "y": 3060,
                 "wires": [
                     {
                         "id": "ec0b081b.595dc8",
@@ -1421,10 +1421,10 @@
     {
         "id": "83af09e0.355f98",
         "type": "postgresdb",
-        "hostname": "localhost",
+        "hostname": "envox.hr",
         "port": "5432",
-        "db": "postgres",
-        "ssl": false
+        "db": "bb3_ate",
+        "ssl": true
     },
     {
         "id": "2eb605f.e6c7cfa",
@@ -9043,7 +9043,8 @@
         "y": 60,
         "wires": [
             [
-                "8ee1aebc.69c98"
+                "8ee1aebc.69c98",
+                "d99651c6.6ca3d"
             ]
         ]
     },
@@ -15945,7 +15946,7 @@
         "name": "",
         "env": [],
         "x": 590,
-        "y": 720,
+        "y": 760,
         "wires": [
             [
                 "896c9618.86f978"
@@ -16124,7 +16125,7 @@
         "y": 240,
         "wires": [
             [
-                "c24b58cf.a35658"
+                "d3123432.31a1b8"
             ]
         ]
     },
@@ -16970,7 +16971,7 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "x": 390,
-        "y": 1300,
+        "y": 1260,
         "wires": []
     },
     {
@@ -17064,14 +17065,14 @@
             }
         ],
         "x": 130,
-        "y": 1320,
+        "y": 1280,
         "wires": [
             [
                 "6e46c11c.bc622"
             ],
             [],
             [
-                "58e8e23b.74982c"
+                "89e12158.37ba"
             ]
         ]
     },
@@ -17081,7 +17082,7 @@
         "z": "c2a35e3.50ef2a",
         "name": "",
         "x": 670,
-        "y": 1220,
+        "y": 1200,
         "wires": [
             [
                 "f605c01.e43bb4"
@@ -18127,7 +18128,7 @@
         "command": "ROUTE:OPEN (@101)",
         "commandType": "str",
         "x": 370,
-        "y": 680,
+        "y": 720,
         "wires": [
             [
                 "ffda7d79.eb6f7"
@@ -18142,7 +18143,7 @@
         "connection": "e701286.3ff23d8",
         "connectionName": "",
         "connectionNameType": "str",
-        "query": "SYST:DELAY 4000; :MEAS:VOLT? (@304)",
+        "query": "SYST:DELAY 1000; :MEAS:VOLT? (@304)",
         "queryType": "str",
         "x": 420,
         "y": 1080,
@@ -18374,7 +18375,7 @@
         "connection": "e701286.3ff23d8",
         "connectionName": "",
         "connectionNameType": "str",
-        "query": "SYST:DELAY 1000; :MEAS:CURR? (@306)",
+        "query": "SYST:DELAY 2000; :MEAS:CURR? (@306)",
         "queryType": "str",
         "x": 420,
         "y": 1700,
@@ -18589,12 +18590,12 @@
             }
         ],
         "x": 250,
-        "y": 3080,
+        "y": 3060,
         "wires": [
             [],
             [],
             [
-                "db05d7af.ce5d78"
+                "27b7744c.c5a5ec"
             ]
         ]
     },
@@ -18728,7 +18729,7 @@
         "command": "ROUTE:OPEN (@101)",
         "commandType": "str",
         "x": 350,
-        "y": 3140,
+        "y": 3160,
         "wires": [
             [
                 "959626d8.f26988"
@@ -18746,7 +18747,7 @@
         "command": "CURR 0.1",
         "commandType": "str",
         "x": 310,
-        "y": 3180,
+        "y": 3200,
         "wires": [
             [
                 "7be5146a.50a1ec"
@@ -18764,7 +18765,7 @@
         "command": "VOLT 5",
         "commandType": "str",
         "x": 310,
-        "y": 3220,
+        "y": 3240,
         "wires": [
             [
                 "3eef93ab.70a46c"
@@ -18779,10 +18780,10 @@
         "connection": "e701286.3ff23d8",
         "connectionName": "",
         "connectionNameType": "str",
-        "query": "SYST:DELAY 4000; :MEAS:VOLT? (@304)",
+        "query": "SYST:DELAY 1000; :MEAS:VOLT? (@304)",
         "queryType": "str",
         "x": 420,
-        "y": 3260,
+        "y": 3280,
         "wires": [
             [
                 "8baf4de.4c46bb"
@@ -18992,7 +18993,7 @@
             }
         ],
         "x": 730,
-        "y": 3260,
+        "y": 3280,
         "wires": [
             [
                 "c2e1b4d4.f85a18"
@@ -19096,7 +19097,7 @@
                 "type": "str"
             }
         ],
-        "x": 730,
+        "x": 770,
         "y": 400,
         "wires": [
             [
@@ -19135,7 +19136,7 @@
         "y": 640,
         "wires": [
             [
-                "d8a8aff3.32f9a"
+                "3cb24e11.d19462"
             ]
         ]
     },
@@ -19222,7 +19223,7 @@
             },
             {
                 "name": "tolerance",
-                "value": "0.1",
+                "value": "0.15",
                 "type": "num"
             },
             {
@@ -19323,7 +19324,7 @@
         "z": "44d3587.47609a8",
         "name": "",
         "x": 430,
-        "y": 3320,
+        "y": 3340,
         "wires": [
             [
                 "f52357d.024bba8"
@@ -19662,7 +19663,7 @@
         "y": 260,
         "wires": [
             [
-                "52a9a455.e9abdc"
+                "cf8fa462.0eca78"
             ]
         ]
     },
@@ -19957,7 +19958,7 @@
         "name": "Test voltage calibration at 5 V",
         "info": "",
         "x": 580,
-        "y": 3080,
+        "y": 3060,
         "wires": []
     },
     {
@@ -22002,6 +22003,147 @@
         "wires": [
             [
                 "feeb9ef6.41177"
+            ]
+        ]
+    },
+    {
+        "id": "d99651c6.6ca3d",
+        "type": "debug",
+        "z": "89f2c24e.25494",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "89e12158.37ba",
+        "type": "bb3-command",
+        "z": "c2a35e3.50ef2a",
+        "name": "",
+        "connection": "7498fb65.f62424",
+        "connectionName": "",
+        "connectionNameType": "str",
+        "command": "outp 0, ch2",
+        "commandType": "str",
+        "x": 200,
+        "y": 1340,
+        "wires": [
+            [
+                "58e8e23b.74982c"
+            ]
+        ]
+    },
+    {
+        "id": "89286e77.6acbb",
+        "type": "catch",
+        "z": "c2a35e3.50ef2a",
+        "name": "",
+        "scope": [
+            "89e12158.37ba"
+        ],
+        "uncaught": false,
+        "x": 420,
+        "y": 1340,
+        "wires": [
+            [
+                "58e8e23b.74982c"
+            ]
+        ]
+    },
+    {
+        "id": "cf8fa462.0eca78",
+        "type": "bb3-command",
+        "z": "8d63caf6.5bb538",
+        "name": "",
+        "connection": "7498fb65.f62424",
+        "connectionName": "",
+        "connectionNameType": "str",
+        "command": "OUTP 0,(@301)",
+        "commandType": "str",
+        "x": 470,
+        "y": 260,
+        "wires": [
+            [
+                "52a9a455.e9abdc"
+            ]
+        ]
+    },
+    {
+        "id": "d3123432.31a1b8",
+        "type": "bb3-command",
+        "z": "603d1828.96f648",
+        "name": "",
+        "connection": "7498fb65.f62424",
+        "connectionName": "",
+        "connectionNameType": "str",
+        "command": "OUTP 0,(@302)",
+        "commandType": "str",
+        "x": 430,
+        "y": 240,
+        "wires": [
+            [
+                "c24b58cf.a35658"
+            ]
+        ]
+    },
+    {
+        "id": "3cb24e11.d19462",
+        "type": "bb3-command",
+        "z": "44d3587.47609a8",
+        "name": "",
+        "connection": "7498fb65.f62424",
+        "connectionName": "",
+        "connectionNameType": "str",
+        "command": ":SOUR:VOLT MIN",
+        "commandType": "str",
+        "x": 360,
+        "y": 680,
+        "wires": [
+            [
+                "d8a8aff3.32f9a"
+            ]
+        ]
+    },
+    {
+        "id": "27b7744c.c5a5ec",
+        "type": "bb3-command",
+        "z": "44d3587.47609a8",
+        "name": "",
+        "connection": "7498fb65.f62424",
+        "connectionName": "",
+        "connectionNameType": "str",
+        "command": "VOLT MIN",
+        "commandType": "str",
+        "x": 310,
+        "y": 3120,
+        "wires": [
+            [
+                "1d89d7d1.b47548"
+            ]
+        ]
+    },
+    {
+        "id": "1d89d7d1.b47548",
+        "type": "bb3-command",
+        "z": "44d3587.47609a8",
+        "name": "",
+        "connection": "7498fb65.f62424",
+        "connectionName": "",
+        "connectionNameType": "str",
+        "command": "SYST:DELAY 100",
+        "commandType": "str",
+        "x": 540,
+        "y": 3120,
+        "wires": [
+            [
+                "db05d7af.ce5d78"
             ]
         ]
     }
