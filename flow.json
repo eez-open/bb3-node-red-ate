@@ -16279,7 +16279,7 @@
                 "type": "str"
             }
         ],
-        "x": 160,
+        "x": 140,
         "y": 140,
         "wires": [
             [
@@ -16468,7 +16468,7 @@
                 "type": "str"
             }
         ],
-        "x": 160,
+        "x": 140,
         "y": 260,
         "wires": [
             [
@@ -16698,7 +16698,7 @@
         "connectionNameType": "str",
         "command": "OUTP:PROT:CLE (@101)",
         "commandType": "str",
-        "x": 420,
+        "x": 400,
         "y": 260,
         "wires": [
             [
@@ -17124,7 +17124,7 @@
             }
         ],
         "x": 620,
-        "y": 1420,
+        "y": 1440,
         "wires": []
     },
     {
@@ -17140,7 +17140,7 @@
             }
         ],
         "x": 620,
-        "y": 1380,
+        "y": 1400,
         "wires": []
     },
     {
@@ -22030,13 +22030,13 @@
         "connection": "7498fb65.f62424",
         "connectionName": "",
         "connectionNameType": "str",
-        "command": "outp 0, ch2",
+        "command": "outp 0, (@301)",
         "commandType": "str",
-        "x": 200,
+        "x": 210,
         "y": 1340,
         "wires": [
             [
-                "58e8e23b.74982c"
+                "30028488.0024ec"
             ]
         ]
     },
@@ -22046,10 +22046,11 @@
         "z": "c2a35e3.50ef2a",
         "name": "",
         "scope": [
-            "89e12158.37ba"
+            "89e12158.37ba",
+            "30028488.0024ec"
         ],
         "uncaught": false,
-        "x": 420,
+        "x": 910,
         "y": 1340,
         "wires": [
             [
@@ -22144,6 +22145,47 @@
         "wires": [
             [
                 "db05d7af.ce5d78"
+            ]
+        ]
+    },
+    {
+        "id": "30028488.0024ec",
+        "type": "bb3-command",
+        "z": "c2a35e3.50ef2a",
+        "name": "",
+        "connection": "7498fb65.f62424",
+        "connectionName": "",
+        "connectionNameType": "str",
+        "command": "outp 0, (@302)",
+        "commandType": "str",
+        "x": 450,
+        "y": 1340,
+        "wires": [
+            [
+                "5344dfc7.31093"
+            ]
+        ]
+    },
+    {
+        "id": "5344dfc7.31093",
+        "type": "delay",
+        "z": "c2a35e3.50ef2a",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 640,
+        "y": 1340,
+        "wires": [
+            [
+                "58e8e23b.74982c"
             ]
         ]
     }
