@@ -16842,7 +16842,7 @@
         "rules": [
             {
                 "t": "lt",
-                "v": "0.018",
+                "v": "0.010",
                 "vt": "str"
             },
             {
@@ -17131,11 +17131,11 @@
         "id": "de4089a.3ef6078",
         "type": "subflow:d5fd25c6.a42208",
         "z": "c2a35e3.50ef2a",
-        "name": "< 18 mA",
+        "name": "< 10 mA",
         "env": [
             {
                 "name": "errMsg",
-                "value": "< 18 mA",
+                "value": "< 22 mA",
                 "type": "str"
             }
         ],
@@ -18926,7 +18926,7 @@
             },
             {
                 "name": "tolerance",
-                "value": "4",
+                "value": "0.1",
                 "type": "num"
             },
             {
@@ -18978,7 +18978,7 @@
             },
             {
                 "name": "tolerance",
-                "value": "1",
+                "value": "0.1",
                 "type": "num"
             },
             {
@@ -19013,7 +19013,7 @@
             },
             {
                 "name": "tolerance",
-                "value": "0.8",
+                "value": "0.25",
                 "type": "num"
             },
             {
@@ -19188,7 +19188,7 @@
             },
             {
                 "name": "tolerance",
-                "value": "2",
+                "value": "3",
                 "type": "num"
             },
             {
