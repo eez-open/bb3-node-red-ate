@@ -18800,7 +18800,7 @@
         "connectionNameType": "str",
         "command": "VOLT 20",
         "commandType": "str",
-        "x": 310,
+        "x": 510,
         "y": 3500,
         "wires": [
             [
@@ -19298,7 +19298,7 @@
             [],
             [],
             [
-                "7cbbacc6.558104"
+                "9924f3ec.5538"
             ]
         ]
     },
@@ -22186,6 +22186,24 @@
         "wires": [
             [
                 "58e8e23b.74982c"
+            ]
+        ]
+    },
+    {
+        "id": "9924f3ec.5538",
+        "type": "bb3-command",
+        "z": "44d3587.47609a8",
+        "name": "",
+        "connection": "7498fb65.f62424",
+        "connectionName": "",
+        "connectionNameType": "str",
+        "command": "CURR 0.5",
+        "commandType": "str",
+        "x": 310,
+        "y": 3500,
+        "wires": [
+            [
+                "7cbbacc6.558104"
             ]
         ]
     }
