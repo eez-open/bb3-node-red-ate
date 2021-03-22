@@ -1424,7 +1424,7 @@
         "hostname": "envox.hr",
         "port": "5432",
         "db": "bb3_ate",
-        "ssl": true
+        "ssl": false
     },
     {
         "id": "2eb605f.e6c7cfa",
